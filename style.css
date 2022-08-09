@@ -306,7 +306,7 @@ section{
 
 .menu .box-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(50rem,2fr));
   gap:1.5rem;
 }
 .menu .box-container .box{
@@ -315,8 +315,7 @@ text-align: center;
 border: var(--border);
 }
 .menu .box-container .box img{
-  height: 10rem;
-
+  height: 20rem;
 }
 
 .menu .box-container .box h3{
@@ -346,7 +345,7 @@ border: var(--border);
 
 .products .box-container{
   display: grid;
-  grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(40rem,1fr));
   gap:1.5rem;
 }
 
@@ -480,4 +479,57 @@ padding-left: 2rem;
   color:#fff;
   text-transform: none;
   background:none;
+}
+
+.footer{
+  background-color: var(--black);
+  text-align: center;
+}
+
+.footer .share{
+  padding:1rem 0;
+}
+
+.footer .share a{
+height: 5rem;
+width: 5rem;
+line-height: 5rem;
+font-size: 2rem;
+color:#fff;
+border:var(--border);
+margin: 0.3rem;
+border-radius: 50%;
+}
+
+.footer .share a:hover{
+  background-color:var(--main-color);
+}
+
+.footer .links{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap ;
+  padding:2rem 0;
+  gap:1rem;
+}
+
+.footer .links a{
+  padding:.7rem 2rem;
+  color:#fff;
+  border:var(--border);
+  font-size: 2rem;
+}
+.footer .links a:hover{
+  background: var(--main-color);
+}
+
+.footer .credit{
+  font-size: 2rem;
+  color:#fff;
+  font-weight: lighter;
+  padding: 1.5rem;
+}
+
+.footer .credit span{
+  color:var(--main-color);
 }
